@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .ul {
+            font-size: 30px;
+            margin-top: 100px;
+            margin-left: 100px;
+            margin-bottom: 30px;
+        }
+
+        .input {
+            margin-left: 100px;
+            height: 30px;
+            width: 400px;
+            font-size: 30px;
+        }
+
+        .button {
+            height: 35px;
+            width: 100px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Есть список элементов. 
+        Пользователь может добавлять новые элементы списка 
+        с текстом “Новый элемент списка” нажав на кнопку "Добавить". -->
+
+    <div id="app">
+        <ul class="ul">
+            <li v-for="item in list" :key="item.id"> {{item}} </li>
+        </ul>
+        <input class="input" type="text" placeholder="Введите элемент списка" v-model="newItem">
+        <button class="button" @click="addItem">Добавить</button>
+
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                list: [1, 2, 3],
+                newItem: '',
+  
+            },
+            methods: {
+                addItem() {
+                    this.list.push(this.newItem)                
+                }
+            }
+        });
+
+    </script>
+    
+</body>
+</html>
