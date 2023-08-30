@@ -1,0 +1,239 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 53px;
+}
+.header .menu__link {
+  text-decoration: none;
+  color: #292F36;
+  text-align: center;
+  font-family: Jost;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+}
+.header .menu__link:nth-child(2) {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.banner {
+  background-image: url(../img/Photo.jpg);
+  height: 356px;
+  margin-top: 45px;
+  margin-bottom: 200px;
+  display: flex;
+  align-items: flex-end;
+}
+.banner__content__intro {
+  background-color: #fff;
+  border-radius: 37px 37px 0px 0px;
+  padding: 41px 78px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.banner__content__intro h2 {
+  color: #292F36;
+  font-size: 50px;
+  font-family: DM Serif Display;
+  font-weight: 700;
+  line-height: 125%;
+  font-style: normal;
+}
+.banner__content__intro a {
+  color: #4D5053;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.22px;
+  font-family: Jost;
+}
+
+.blog__content {
+  margin-bottom: 200px;
+}
+.blog__content .post__content {
+  display: flex;
+  padding: 22px;
+}
+.blog__content .post__content img {
+  border-radius: 25px;
+}
+.blog__content .post__content__description {
+  margin-left: 65px;
+  margin-top: 50px;
+  width: 463px;
+}
+.blog__content .post__content__description h3 {
+  color: #292F36;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+  letter-spacing: 0.5px;
+  font-family: DM Serif Display;
+  margin-bottom: 22px;
+}
+.blog__content .post__content__description p {
+  color: #4D5053;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.22px;
+  font-family: Jost;
+}
+.blog__content .post__content__data {
+  display: flex;
+  margin-top: 41px;
+  justify-content: space-between;
+  align-items: center;
+}
+.blog__content .post__title {
+  margin-bottom: 27px;
+  color: #292F36;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%;
+  letter-spacing: 1px;
+  font-family: DM Serif Display;
+}
+.blog__content .news {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+}
+.blog__content .news__title {
+  margin-bottom: 30px;
+  color: #292F36;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%;
+  letter-spacing: 1px;
+  font-family: DM Serif Display;
+}
+.blog__content .news__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 30px;
+  -moz-column-gap: 28px;
+       column-gap: 28px;
+}
+.blog__content .news__content__item {
+  padding: 21px;
+  border-radius: 62px;
+  box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.25);
+  border: 1px solid #E7E7E7;
+}
+.blog__content .news__item__img {
+  border-radius: 45px 45px 0 0;
+}
+.blog__content .news__item__title {
+  color: #292F36;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+  letter-spacing: 0.5px;
+  font-family: DM Serif Display;
+  margin-top: 11px;
+}
+.blog__content .news__item__data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.blog__content .news__pagination {
+  margin-top: 51px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 272px;
+  gap: 27px;
+  margin-bottom: 134px;
+}
+.footer__content .footer__interno__text {
+  margin-top: 18px;
+  margin-bottom: 31px;
+  color: #4D5053;
+  font-family: Jost;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.22px;
+}
+.footer__content .footer__interno__link a:first-child {
+  margin-right: 54px;
+}
+.footer__content .footer__pages {
+  display: flex;
+  flex-direction: column;
+  margin-left: 75px;
+}
+.footer__content .footer__pages__title {
+  color: #292F36;
+  font-family: DM Serif Display;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+}
+.footer__content .footer__pages__link {
+  text-decoration: none;
+  color: #4D5053;
+  font-family: Jost;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 300%;
+  letter-spacing: 0.22px;
+}
+.footer__content .footer__contact {
+  display: flex;
+  flex-direction: column;
+}
+.footer__content .footer__contact__title {
+  color: #292F36;
+  font-family: DM Serif Display;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+  margin-bottom: 26px;
+}
+.footer__content .footer__contact__text {
+  color: #4D5053;
+  font-family: Jost;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.22px;
+}
+.footer__content .footer__contact__text span {
+  color: #4D5053;
+  font-family: Jost;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 300%;
+  letter-spacing: 0.22px;
+}/*# sourceMappingURL=blog_style.css.map */
